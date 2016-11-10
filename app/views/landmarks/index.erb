@@ -1,0 +1,12 @@
+<h1>Landmark List</h1>
+
+<ul>
+  <%Landmark.all.each do |landmark|%>
+    <li>
+      <a href="/landmarks/<%=landmark.id%>"><%=landmark.name%></a>
+      <p>
+        Established: <%=landmark.year_completed%>
+      </p>
+    </li>
+  <%end%>
+</ul>
